@@ -2,32 +2,29 @@
 
 ## Project Overview
 
-This project develops a deep learning system for automated yoga pose classification using computer vision techniques. Two approaches were implemented and compared:
+This project develops an automated yoga pose classification system using deep learning and computer vision techniques. The study compares a custom-built Convolutional Neural Network (CNN) with a MobileNetV2 transfer learning model to classify yoga poses from RGB images.
 
-* Custom Convolutional Neural Network (CNN)
-* MobileNetV2 Transfer Learning Model
-
-The objective is to classify five common yoga poses from RGB images and evaluate the effectiveness of transfer learning compared with a custom-built CNN architecture.
+The objective is to evaluate whether transfer learning can improve classification performance compared with a conventional CNN architecture.
 
 ---
 
 ## Dataset
 
-The dataset contains five yoga pose classes:
+The dataset consists of five yoga pose categories:
 
-1. Downward Dog
-2. Goddess
-3. Plank
-4. Tree
-5. Warrior II
+* Downward Dog
+* Goddess
+* Plank
+* Tree
+* Warrior II
 
 ### Dataset Size
 
 | Split    | Images |
-| -------- | -----: |
-| Training |   1080 |
-| Testing  |    470 |
-| Total    |   1550 |
+| -------- | ------ |
+| Training | 1080   |
+| Testing  | 470    |
+| Total    | 1550   |
 
 ---
 
@@ -50,11 +47,11 @@ The project workflow includes:
 
 ### Custom CNN
 
-A custom convolutional neural network was developed using multiple convolution, pooling, dropout, and dense layers.
+A custom convolutional neural network was developed using convolution, pooling, dropout, and fully connected layers.
 
-### MobileNetV2
+### MobileNetV2 Transfer Learning
 
-A transfer learning approach using MobileNetV2 pretrained on ImageNet was implemented and fine-tuned for yoga pose classification.
+A pretrained MobileNetV2 architecture was adapted and fine-tuned for yoga pose recognition.
 
 ---
 
@@ -63,13 +60,13 @@ A transfer learning approach using MobileNetV2 pretrained on ImageNet was implem
 ### Test Performance
 
 | Model       | Test Accuracy (%) | Test Loss |
-| ----------- | ----------------: | --------: |
-| Custom CNN  |             74.68 |     0.757 |
-| MobileNetV2 |             88.72 |     0.392 |
+| ----------- | ----------------- | --------- |
+| Custom CNN  | 78.30             | 0.686     |
+| MobileNetV2 | 84.89             | 0.426     |
 
 ### Best Model
 
-MobileNetV2 achieved the highest classification accuracy and demonstrated superior generalization performance.
+MobileNetV2 achieved the highest classification accuracy (84.89%) and outperformed the custom CNN model.
 
 ---
 
@@ -85,39 +82,41 @@ README.md
 
 ### Figures
 
-Contains:
+The repository includes:
 
-* Dataset characterization
-* Exploratory profile
+* Dataset characterization dashboard
+* Comprehensive exploratory profile
 * Representative sample images
 * Data augmentation examples
-* Training curves
+* CNN training curves
+* MobileNetV2 training curves
 * Confusion matrix
 * Model comparison
 * Class-wise F1 scores
 * Prediction analysis
+* Workflow diagram
 
 ### Results
 
 Contains:
 
 * Classification reports
-* Training logs
 * Evaluation summaries
-* Excel result files
+* Training logs
+* Excel and CSV outputs
 
 ### Models
 
-Contains:
+Included:
 
 * mobilenetv2_best.keras
 * mobilenetv2_final.keras
 
-Note: Custom CNN checkpoints exceeded GitHub web upload size limits and were retained in the Kaggle environment.
+Custom CNN model checkpoints exceeded GitHub web upload limits and were therefore retained in the Kaggle environment.
 
 ### Notebook
 
-Contains the project notebook and documentation.
+Contains the complete project notebook and implementation workflow.
 
 ---
 
@@ -131,5 +130,10 @@ Contains the project notebook and documentation.
 * Matplotlib
 * Scikit-learn
 
+---
 
+## Author
 
+Maryam Moghaddas Bayat
+
+PhD. in Economics
