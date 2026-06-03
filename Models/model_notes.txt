@@ -1,0 +1,9 @@
+Included models:
+- mobilenetv2_best.keras
+- mobilenetv2_final.keras
+
+Not included due to GitHub web upload size limitations:
+- custom_cnn_best.keras (~78 MB)
+- custom_cnn_final.keras (~78 MB)
+
+The MobileNetV2 model achieved the best performance and is therefore included in this repository.
