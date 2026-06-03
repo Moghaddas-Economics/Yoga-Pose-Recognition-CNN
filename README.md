@@ -131,13 +131,5 @@ Contains the project notebook and documentation.
 * Matplotlib
 * Scikit-learn
 
----
 
-## Author
-
-Maryam Moghaddas Bayat
-
-Master's Program in Economics and Data Analytics
-
-Frankfurt School of Finance & Management
 
