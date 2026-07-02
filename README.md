@@ -1,5 +1,6 @@
-# Yoga Pose Classification Using Convolutional Neural Networks and Transfer Learning
-
+# Explainable Deep learning for Yoga Pose
+Recognition: a Comparative study of CNN and
+MobileNetV2l Networks and Transfer Learning
 ## Project Overview
 
 This project develops an automated yoga pose classification system using deep learning and computer vision techniques. Two image-classification approaches are implemented and compared:
